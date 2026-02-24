@@ -5,6 +5,9 @@ This repository contains the data used to compute the figures and signal-to-nois
 ## Repository Structure
 
 ```
+├── DFdata/
+│   m_15_growthrate_*.txt
+│
 ├── GrowthRate/
 │   GrowthRate_*.txt
 │
@@ -15,9 +18,33 @@ This repository contains the data used to compute the figures and signal-to-nois
 │   SUcollapse_*.txt
 ```
 
+### DFdata
+
+This folder contains files with the **effective growth rate** `f_eff(z)` for `M = 10^15 M_\odot` mass halos, whose velocities are altered by Dynamical Friction in the DE medium
+
+Each file contains columns
+
+```
+z, f_eff
+```
+
+Example file:
+
+```
+DFdata/m_15_growth_rate_phantom_cs_p_sq1e-05_cs_m_sq0.01.txt
+```
+
+The filename encodes the model parameters:
+- model type (Phantom or Quintom)
+- dark energy sound speeds c+² and c−²
+
+In addition, the two Zeldovich data files are the results without the DF from the DDE background. This data differs from LCDM just via the background cosmology.
+
+---
+
 ### GrowthRate
 
-This folder contains files with the **scale-dependent linear growth factor** D(z, k)
+This folder contains files with the **scale-dependent linear growth factor** `D(z, k)`
 
 Each file contains columns
 
