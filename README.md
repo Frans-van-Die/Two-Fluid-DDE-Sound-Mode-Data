@@ -14,9 +14,7 @@ This repository contains the data used to compute the figures and signal-to-nois
 
 ### GrowthRate
 
-This folder contains files with the **scale-dependent linear growth factor**
-
-D(z, k)
+This folder contains files with the **scale-dependent linear growth factor** D(z, k)
 
 Each file contains columns
 
@@ -40,7 +38,7 @@ The filename encodes the model parameters:
 
 This folder contains results from **separate-universe collapse calculations** used to compute the scale-dependent bias response.
 
-Each file contains
+Each file contains columns
 
 ```
 k, f(k)
